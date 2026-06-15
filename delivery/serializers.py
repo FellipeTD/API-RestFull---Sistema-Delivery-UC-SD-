@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import user,estabelecimento,lista
+from .models import user,estabelecimento,lista,produto,pedido,endereco
 
 class userSerializer(serializers.ModelSerializer):
     class Meta:
@@ -33,3 +33,39 @@ class listaEstabelecimentoSerializer(serializers.ModelSerializer):
     class Meta:
         model = lista
         fields = ['user_nome']
+
+class produtoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = produto
+        fields = '__all__'
+
+class pedidoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = pedido
+        fields = '__all__'
+
+class enderecoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = endereco
+        fields = '__all__'
+
+class listaProdutoSerializer(serializers.ModelSerializer):
+    user_nome = serializers.ReadOnlyField(source='user.nome')
+
+    class Meta:
+        model = lista
+        fields = ['user_nome']
+
+class listaPedidoSerializer(serializers.ModelSerializer):
+    user_nome = serializers.ReadOnlyField(source='user.nome')
+
+    class Meta:
+        model = lista
+        fields = ['user_nome']
+
+class listaEnderecoSerializer(serializers.ModelSerializer):
+    user_nome = serializers.ReadOnlyField(source='user.nome')
+
+    class Meta:
+        model = lista
+        fields = ['endereco']
