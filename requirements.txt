@@ -1,0 +1,345 @@
+1. Descricao do Projeto
+
+Tema: Sistema de Delivery Local.
+
+Apresentacao do Projeto
+
+Com o crescimento do comercio digital e da utilizacao de servicos de entrega, muitos pequenos estabelecimentos enfrentam dificuldades para gerenciar seus produtos, pedidos e formas de venda de maneira eficiente. Alem disso, a dependencia de grandes plataformas de delivery pode gerar custos elevados devido as taxas cobradas sobre as vendas.
+
+Pensando nesse cenario, este projeto propoe o desenvolvimento de uma API REST para um sistema de delivery local. A aplicacao permitira o cadastro e gerenciamento de usuarios, produtos e formas de venda, oferecendo uma solucao pratica para pequenos negocios que desejam ter maior controle sobre suas operacoes.
+
+Problema que o Sistema Resolve
+
+O sistema busca facilitar a administracao de produtos e servicos disponibilizados por estabelecimentos locais, permitindo que os responsaveis realizem o gerenciamento das informacoes de forma organizada e segura. Dessa maneira, o controle dos dados fica centralizado, reduzindo erros e aumentando a eficiencia operacional.
+
+Publico-Alvo
+
+O sistema foi pensado principalmente para:
+
+Restaurantes;
+
+Lanchonetes;
+
+Pizzarias;
+
+Food trucks;
+
+Pequenos empreendedores do setor alimenticio;
+
+Empresas que trabalham com entregas locais.
+
+Forma
+
+2. Matriz Estrategica (Analise SWOT)
+
+A analise SWOT foi utilizada para identificar fatores internos e externos que podem influenciar o sucesso do projeto.
+
+Forcas
+
+Interface simples e objetiva para integracao com diferentes sistemas.
+
+Facilidade de gerenciamento dos produtos e servicos.
+
+Utilizacao de tecnologias modernas e amplamente utilizadas no mercado.
+
+Estrutura escalavel para futuras melhorias.
+
+Fraquezas
+
+O sistema depende de conexao com a internet.
+
+A versao inicial possui funcionalidades limitadas.
+
+Necessidade de manutencao e atualizacao continua.
+
+Oportunidades
+
+Crescimento constante do mercado de delivery.
+
+Possibilidade de integracao com aplicativos moveis.
+
+Expansao para diferentes segmentos comerciais.
+
+Ameacas
+
+Concorrencia com grandes plataformas ja consolidadas.
+
+Mudancas tecnologicas que exijam adaptacoes futuras.
+
+Riscos relacionados a seguranca da informacao.
+
+Forma
+
+3. Canvas do Produto
+
+Proposta de Valor
+
+Disponibilizar uma solucao simples, segura e eficiente para gerenciamento de delivery local atraves de uma API REST.
+
+Segmentos de Clientes
+
+Restaurantes;
+
+Lanchonetes;
+
+Pizzarias;
+
+Pequenos negocios de alimentacao.
+
+Canais
+
+Sistemas Web;
+
+Aplicativos Mobile;
+
+Integracoes com sistemas de terceiros.
+
+Fontes de Receita
+
+Licenciamento da plataforma;
+
+Planos de assinatura;
+
+Servicos de suporte e manutencao.
+
+Principais Recursos
+
+API REST;
+
+Banco de dados;
+
+Sistema de autenticacao;
+
+Hospedagem em servidor.
+
+Forma
+
+4. Canvas do Projeto
+
+Objetivo do Projeto
+
+Desenvolver uma API REST utilizando Django REST Framework para auxiliar estabelecimentos locais no gerenciamento de produtos e formas de venda.
+
+Stakeholders
+
+Os principais envolvidos no projeto sao:
+
+Clientes finais;
+
+Proprietarios dos estabelecimentos;
+
+Equipe de desenvolvimento;
+
+Professor orientador da disciplina.
+
+Principais Riscos
+
+Atrasos no cronograma de desenvolvimento;
+
+Falhas de autenticacao ou seguranca;
+
+Problemas de integracao entre os modulos.
+
+Entregas Previstas
+
+API funcional;
+
+Documentacao tecnica;
+
+Repositorio GitHub;
+
+Relatorio academico.
+
+Prazo
+
+O desenvolvimento seguira o cronograma definido pela disciplina, contemplando analise, implementacao, testes e documentacao.
+
+Forma
+
+5. Levantamento de Requisitos
+
+Requisitos Funcionais
+
+O sistema devera permitir:
+
+Cadastro de usuarios;
+
+Login e autenticacao;
+
+Cadastro de produtos ou servicos;
+
+Consulta de produtos cadastrados;
+
+Atualizacao de informacoes dos produtos;
+
+Exclusao de produtos;
+
+Cadastro de formas de venda;
+
+Atualizacao das formas de venda;
+
+Exclusao das formas de venda;
+
+Geracao de listagens e relatorios;
+
+Associacao dos registros ao usuario responsavel.
+
+Requisitos Nao Funcionais
+
+O sistema devera atender aos seguintes requisitos:
+
+Utilizar autenticacao segura baseada em Token ou JWT;
+
+Ser desenvolvido utilizando Python e Django REST Framework;
+
+Possuir codigo organizado e documentado;
+
+Utilizar Git e GitHub para controle de versoes;
+
+Apresentar desempenho adequado para consultas e operacoes basicas;
+
+Possibilitar futuras expansoes sem grandes alteracoes estruturais.
+
+Forma
+
+6. Modelagem das Classes
+
+Classe Usuario
+
+Responsavel pelo gerenciamento de acesso ao sistema.
+
+Principais Atributos
+
+Nome de usuario;
+
+E-mail;
+
+Senha;
+
+Permissoes de acesso.
+
+Forma
+
+Classe Produto
+
+Responsavel pelo armazenamento das informacoes dos produtos ou servicos oferecidos.
+
+Principais Atributos
+
+Nome;
+
+Descricao;
+
+Preco;
+
+Status (ativo ou inativo);
+
+Usuario responsavel pelo cadastro.
+
+Forma
+
+Classe Forma de Venda
+
+Responsavel pelo controle das modalidades de comercializacao dos produtos.
+
+Principais Atributos
+
+Tipo de venda;
+
+Condicoes de pagamento;
+
+Produto relacionado.
+
+Forma
+
+7. Listagens e Relatorios
+
+Para auxiliar na gestao das informacoes, a API disponibilizara endpoints especificos para consultas e relatorios.
+
+Entre eles:
+
+Produtos cadastrados por usuario;
+
+Produtos ativos;
+
+Produtos inativos;
+
+Relatorio resumido contendo o total de produtos cadastrados;
+
+Quantidade de produtos ativos e inativos.
+
+Essas informacoes poderao ser acessadas por meio de requisicoes REST autenticadas.
+
+Forma
+
+8. Tecnologias Utilizadas
+
+O projeto sera desenvolvido utilizando as seguintes tecnologias:
+
+Python 3.x;
+
+Django;
+
+Django REST Framework;
+
+SQLite (ou PostgreSQL);
+
+Git;
+
+GitHub.
+
+Forma
+
+9. Gestao do Projeto com Kanban
+
+Para organizar as atividades do projeto sera utilizado um quadro Kanban, desenvolvido no GitHub Projects.
+
+As tarefas serao divididas em tres etapas:
+
+Backlog
+
+Configuracao do ambiente;
+
+Criacao do projeto Django;
+
+Modelagem das classes;
+
+Desenvolvimento da autenticacao;
+
+Criacao dos endpoints REST;
+
+Testes;
+
+Documentacao.
+
+Em Andamento
+
+Tarefas atualmente em desenvolvimento.
+
+Concluido
+
+Funcionalidades ja implementadas e testadas.
+
+O link do quadro Kanban sera disponibilizado no relatorio final.
+
+Forma
+
+10. Controle de Versao
+
+Todo o desenvolvimento sera armazenado em um repositorio publico no GitHub.
+
+Serao adotadas boas praticas de versionamento, incluindo:
+
+Commits frequentes e descritivos;
+
+Organizacao das funcionalidades por branches quando necessario;
+
+README contendo instrucoes para instalacao e execucao da API.
+
+Forma
+
+11. Conclusao
+
+O Sistema de Delivery Local tem como objetivo oferecer uma solucao pratica para o gerenciamento de produtos e formas de venda por meio de uma API REST. O projeto utiliza tecnologias amplamente reconhecidas no mercado, proporcionando seguranca, organizacao e facilidade de manutencao.
+
+Alem de atender aos requisitos propostos na disciplina, a aplicacao podera servir como base para futuras expansoes, incluindo integracao com aplicativos moveis, sistemas de pedidos e plataformas de pagamento online.
